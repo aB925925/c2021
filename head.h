@@ -1,4 +1,4 @@
-#include<stdio.h>
+
 #define LENGTH 30
 typedef struct User_login{
     char name[LENGTH]; //用户名
