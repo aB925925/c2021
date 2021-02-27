@@ -25,28 +25,39 @@ void BubbleSort(PNode head); //冒泡排序
 
 void BubbleSort(PNode head) //冒泡排序
 {
+
     PNode htemp;
     SDataType temp;
     int i = 0, j = 0, len = 0;
     if(head == NULL)
     {
+
         printf("排序失败，链表为空!\n");
         return;
+
     }
     
     len = ListLength(head);
     for(i = 0; i < len - 1; i++)
     {
+
         htemp = head;
         for(j = len - 1; j > i; j--)
+
         {
             if(htemp->data.totalcount < htemp->PNext->data.totalcount)
+
             {
+
                 temp = htemp->data;
                 htemp->data = htemp->PNext->data;
                 htemp->PNext->data = temp;
+
             }
             htemp = htemp->PNext;
+
         }
+        
     }
-}
+
+} 
