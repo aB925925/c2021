@@ -25,6 +25,7 @@ void QuickSort(PNode head); //快速排序
 
 void ArrayQuickSort(SDataType* arr, int left, int right) //基于数组的快速排序
 {
+
     int i, j;
     SDataType temp;
 
@@ -61,6 +62,7 @@ void ArrayQuickSort(SDataType* arr, int left, int right) //基于数组的快速
 
     ArrayQuickSort(arr, left, i - 1);
     ArrayQuickSort(arr, i, right);
+    
 }
 
 void QuickSort(PNode head) //快速排序
@@ -87,4 +89,3 @@ void QuickSort(PNode head) //快速排序
 
     return;
 }
-
